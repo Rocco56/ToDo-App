@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.ToDo {
+  width: 350px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  overflow: auto;
+  background-color: azure;
+}
+
+.ToDo h3 {
+  text-align: center;
+  background-color: rgb(179, 48, 179);
+  margin: 0;
+  padding: 0.75rem;
+  color: white;
+}
+
+.main {
+  background-color: white;
+  padding: 1rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 1.2rem;
+  overflow: auto;
+}
+
+.main ul li {
+  padding: 1rem 0;
+  white-space: nowrap;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  outline: none;
+
+  border-radius: 15px;
+  background-color: rgb(179, 48, 179);
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn button:hover {
+  background-color: rgb(110, 1, 110);
+}
+
+.btn {
+  align-self: center;
+  margin-bottom: 7rem;
+  margin-left: 1rem;
+}
+
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.enter-content {
+  background-color: aqua;
+  height: 150px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  gap: 20px;
+  margin: 10px;
+}
+
+.content label {
+  color: rgb(75, 72, 72);
+  margin-right: 10px;
+  font-family: inherit;
+}
+
+.content input {
+  padding: 0.5rem;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+
+  border: none;
+  border-radius: 10px;
+}
+.enter button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+
+  color: wheat;
+}
+.enter button:hover {
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.delete {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.delete:hover {
+  transform: scale(1.2);
+}
+
+.text {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: red;
+}
